@@ -1,15 +1,24 @@
-<router-outlet></router-outlet>
-<table>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Dispatch (Component 1)
+      </th>
+      <th>
+        Selector (Component 2)
+      </th>
+    </tr>
+  </thead>
   <tr>
     <td>
       <input type="text" [(ngModel)]="title" />
       <button type="button" (click)="add()">
-        add
+        Add
       </button>
 
-      <button type="button" (click)="remove()">
+      <!-- <button type="button" (click)="remove()">
         remove
-      </button>
+      </button> -->
     </td>
     <td>
       <app-get-form-store></app-get-form-store>
